@@ -71,11 +71,11 @@ export default function WhySimplicity() {
                 </div>
 
                 {/* Floating cards over the arch */}
-                <div className="relative mt-16 h-[420px] sm:h-[460px]">
+                <div className="relative mt-16 h-auto sm:h-[460px] space-y-5">
                     {purpleCards.map(({ icon: Icon, title, description, position }) => (
                         <div
                             key={title}
-                            className={`absolute w-64 rounded-xl bg-gradient-to-r from-[#c8686c] to-[#381F4B] p-5  ${position}`}
+                            className={`sm:absolute w-full sm:w-64 rounded-xl bg-gradient-to-r from-[#c8686c] to-[#381F4B] p-5  ${position}`}
                         >
                             <div className="flex items-start justify-between gap-3">
                                 <h3 className="text-base font-semibold text-white">{title}</h3>
@@ -92,7 +92,7 @@ export default function WhySimplicity() {
                     {darkCards.map(({ icon: Icon, title, description, position }) => (
                         <div
                             key={title}
-                            className={`absolute w-64 rounded-xl p-5 bg-gradient-to-r from-[#ee7873] to-[#5c3455] ${position}`}
+                            className={`sm:absolute w-full sm:w-64 rounded-xl p-5 bg-gradient-to-r from-[#ee7873] to-[#5c3455] ${position}`}
                         >
                             <div className="flex items-center gap-3">
                                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#2a1a4a] text-white">
