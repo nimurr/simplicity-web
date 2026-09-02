@@ -9,9 +9,9 @@ import Image from 'next/image'
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Solutions', href: '#solutions' },
-  { label: 'Clients', href: '#clients' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Solutions', href: '/solutions' },
+  { label: 'Clients', href: '/clients' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 const HEADER_OFFSET = 100 // px to leave visible above the target section
@@ -105,7 +105,7 @@ export default function Header() {
           `
       }
     >
-      <div className="mx-auto bg-white px-[2%] py-4 flex items-center justify-between relative">
+      <div className="mx-auto bg-white px-[2%] py-3 flex items-center justify-between relative">
         {/* Logo */}
         <Link
           href="/"
@@ -115,9 +115,9 @@ export default function Header() {
           <Image
             src="/Images/logo/header_logo-removebg-preview.png"
             alt="AnonymtNorskNr"
-            width={200}
-            height={100}
-            className="h-10 w-auto"
+            width={250}
+            height={150}
+            className="h-16 w-auto"
             priority
           />
         </Link>
@@ -131,7 +131,7 @@ export default function Header() {
               return (
                 <Link
                   key={item.href}
-                  href={item.href} 
+                  href={item.href}
                   className={` font-medium  duration-200 ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'
                     }`}
                 >
@@ -144,7 +144,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Link
-            href="#make-order"
+            href="/contact"
             className="inline-flex items-center justify-center rounded bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90 transition-opacity duration-200"
           >
             Let’s Talk
@@ -186,10 +186,10 @@ export default function Header() {
                 )
               })}
             <Link
-              href="#make-order"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90 transition-opacity duration-200"
             >
-              Order status
+              Let’s Talk
             </Link>
           </nav>
         </div>

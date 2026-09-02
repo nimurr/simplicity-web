@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[100vh] w-full items-center overflow-hidden">
+    <section className="relative flex min-h-[90vh] w-full items-center overflow-hidden top-20">
       {/* Background image */}
       <Image
         src="/Images/Home/Hero_banner.png"
@@ -21,8 +21,8 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-10">
-        <div className="max-w-xl">
-          <span className="inline-block rounded-full border border-primary/50 px-4 py-1.5 text-sm text-primary">
+        <div className="max-w-2xl">
+          <span className="inline-block rounded-lg border border-primary/50 px-4 py-1.5 text-sm text-primary">
             Enterprise Consulting
           </span>
 

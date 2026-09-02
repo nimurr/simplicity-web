@@ -19,7 +19,7 @@ export default function PageBanner({
     image = '/Images/others/section-header-bg.jpg',
 }: PageBannerProps) {
     return (
-        <section className="relative flex h-[280px] w-full items-center justify-center overflow-hidden sm:h-[40vh] mt-14">
+        <section className="relative flex h-[280px] w-full items-center justify-center overflow-hidden sm:h-[40vh] mt-20">
             {/* Background image */}
             <Image
                 src={image}
@@ -28,11 +28,7 @@ export default function PageBanner({
                 priority
                 className="object-cover object-center"
             />
-
-            {/* Color overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#000000]/60 via-[#000000]/60 to-[#000000]/60" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#2a1a4a]/60 via-primary/60 to-[#2a1a4a]/60" />
-
+ 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center text-center px-6">
                 <h1 className="font-serif text-4xl font-bold text-white sm:text-5xl">

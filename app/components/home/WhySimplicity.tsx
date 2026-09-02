@@ -92,7 +92,7 @@ export default function WhySimplicity() {
                     {darkCards.map(({ icon: Icon, title, description, position }) => (
                         <div
                             key={title}
-                            className={`absolute w-64 rounded-xl p-5 bg-gradient-to-r from-[#ee7873] to-[#502d52] ${position}`}
+                            className={`absolute w-64 rounded-xl p-5 bg-gradient-to-r from-[#ee7873] to-[#5c3455] ${position}`}
                         >
                             <div className="flex items-center gap-3">
                                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#2a1a4a] text-white">
