@@ -42,7 +42,7 @@ const solutions = [
 export default function OurSolutions() {
   return (
     <section className="bg-white py-24">
-      <div className="mx-auto max-w-6xl px-6 lg:px-10">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
         {/* Header */}
         <div className="flex flex-col items-center text-center">
           <span className="inline-block rounded-lg bg-primary px-4 py-1.5 text-sm font-medium text-white">

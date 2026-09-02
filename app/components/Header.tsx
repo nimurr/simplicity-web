@@ -105,7 +105,7 @@ export default function Header() {
           `
       }
     >
-      <div className="mx-auto bg-white px-[2%] py-3 flex items-center justify-between relative">
+      <div className="mx-auto bg-white px-[2%] py-4 flex items-center justify-between relative">
         {/* Logo */}
         <Link
           href="/"
