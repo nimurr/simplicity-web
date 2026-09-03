@@ -37,7 +37,7 @@ const offerings = [
 
 export default function WhatWeOffer() {
     return (
-        <section className="bg-[#f4f4f6] py-24">
+        <section className="bg-[#f4f4f6] py-32 md:py-36">
             <div className="mx-auto max-w-7xl px-6 lg:px-10">
                 {/* Header */}
                 <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -84,13 +84,13 @@ export default function WhatWeOffer() {
                             </span>
 
                             {imagePosition === 'right-bottom' && (
-                                <div className="absolute -bottom-20 right-0 h-[300px] w-[250px]">
+                                <div className="absolute -bottom-20 right-0 h-[350px] w-[270px]">
                                     <Image src={image} alt={title} fill className="object-fill" />
                                 </div>
                             )}
 
                             {imagePosition === 'left-bottom' && (
-                                <div className="absolute -bottom-20 left-0 h-[300px] w-[250px]">
+                                <div className="absolute -bottom-20 left-0 h-[350px] w-[270px]">
                                     <Image src={image} alt={title} fill className="object-fill" />
                                 </div>
                             )}
@@ -100,8 +100,8 @@ export default function WhatWeOffer() {
                                 className={`absolute z-20 h-20 w-20 ${imagePosition === 'top'
                                     ? 'left-1/2 top-24 -translate-x-1/2'
                                     : imagePosition === 'left-bottom'
-                                        ? 'bottom-20 left-1/5 -translate-x-1/4'
-                                        : 'bottom-20 right-1/5 -translate-x-1/4'
+                                        ? 'bottom-20 left-2/6 -translate-x-1/4'
+                                        : 'bottom-20 right-1/4 -translate-x-1/4'
                                     }`}
                             >
                                 <Image
