@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[90vh] w-full items-center overflow-hidden top-20">
+    <section className="relative flex min-h-[70vh] md:min-h-[90vh] w-full items-center overflow-hidden top-20">
       {/* Background image */}
       <Image
         src="/Images/Home/Hero_banner.png"

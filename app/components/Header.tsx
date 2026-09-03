@@ -130,6 +130,7 @@ export default function Header() {
               const isActive = isNavItemActive(item.href)
               return (
                 <Link
+                  onClick={() => setMobileOpen(!mobileOpen)}
                   key={item.href}
                   href={item.href}
                   className={` font-medium  duration-200 ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'
@@ -176,6 +177,7 @@ export default function Header() {
                 return (
                   <Link
                     key={item.href}
+                    onClick={() => setMobileOpen(!mobileOpen)}
                     href={item.href}
                     // onClick={(e) => handleNavClick(e, item.href)}
                     className={` font-medium transition-colors duration-200 ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'
