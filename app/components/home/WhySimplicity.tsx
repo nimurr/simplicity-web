@@ -6,7 +6,7 @@ const purpleCards = [
         icon: Lightbulb,
         title: 'Business-Focused Solutions',
         description: "Strategies aligned with each organization's priorities and challenges.",
-        position: 'top-16 left-6 lg:left-24',
+        position: 'top-10 left-6 lg:left-24',
     },
     {
         icon: BarChart3,
@@ -21,13 +21,13 @@ const darkCards = [
         icon: Users,
         title: 'Enterprise Perspective',
         description: 'Connecting people, processes, technology and business strategy.',
-        position: 'top-32 right-6 lg:right-48',
+        position: 'top-0 right-6 lg:right-48',
     },
     {
         icon: Laptop2,
         title: 'Execution-Oriented Approach',
         description: 'Moving beyond recommendations toward practical implementation and results',
-        position: 'bottom-4 right-2 lg:right-32',
+        position: 'bottom-32 right-2 lg:right-32',
     },
 ]
 
